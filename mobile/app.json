@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Campus Safety",
+    "slug": "campus-safety",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "campussafety",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#1a1a2e"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "edu.campus.safety",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Campus Safety needs your location to send alerts and show nearby officers.",
+        "NSLocationAlwaysUsageDescription": "Campus Safety needs your location to send alerts."
+      }
+    },
+    "android": {
+      "package": "edu.campus.safety",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Campus Safety needs your location to send alerts and show nearby officers."
+        }
+      ]
+    ]
+  }
+}
